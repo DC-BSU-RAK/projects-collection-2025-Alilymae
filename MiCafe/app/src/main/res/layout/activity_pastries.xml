@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainpastries"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ede0d4"
+    android:padding="24dp"
+    tools:context=".PastriesActivity"
+    tools:layout_editor_absoluteX="9dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <TextView
+        android:id="@+id/usergreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:fontFamily="@font/eb_garamond_medium"
+        android:text="Hello, user!"
+        android:textColor="#582f0e"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <TextView
+        android:id="@+id/pastriestext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:fontFamily="@font/eb_garamond"
+        android:text="Pastries"
+        android:textColor="#582f0e"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396"  />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:text="MiCafe"
+        android:textAlignment="center"
+        android:textColor="#582f0e"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profilebtn"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/menubtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <ImageButton
+        android:id="@+id/profilebtn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="17dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/menubtn"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="17dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"  />
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="362dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.159"
+        app:srcCompat="@drawable/searchbar"  />
+
+    <ImageView
+        android:id="@+id/grid"
+        android:layout_width="21dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393"
+        app:srcCompat="@drawable/grid"  />
+
+    <LinearLayout
+        android:id="@+id/categoryLayout"
+        android:layout_width="382dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="29dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search">
+
+        <ImageButton
+            android:id="@+id/hotdrinksbtn"
+            android:layout_width="0dp"
+            android:layout_height="93dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/hot" />
+
+        <ImageButton
+            android:id="@+id/colddrinksbtn"
+            android:layout_width="0dp"
+            android:layout_height="93dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/cold" />
+
+        <ImageButton
+            android:id="@+id/desertbtn"
+            android:layout_width="0dp"
+            android:layout_height="93dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/desert" />
+
+        <ImageButton
+            android:id="@+id/pastriesbtn"
+            android:layout_width="0dp"
+            android:layout_height="93dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/pastriesselect" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="370dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pastriestext"
+        app:layout_constraintVertical_bias="0.0">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <ImageButton
+                android:id="@+id/applecroissant"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/appplecroissantcard"
+                tools:layout_editor_absoluteX="-2dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <ImageButton
+                android:id="@+id/buttercroissant"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/buttercroissantcard"
+                tools:layout_editor_absoluteX="-2dp"
+                tools:layout_editor_absoluteY="496dp" />
+
+            <ImageButton
+                android:id="@+id/chocolatecroissant"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/choccroissantcard"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="497dp" />
+
+            <ImageButton
+                android:id="@+id/vanillabeanscone"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/vanillasconecard"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <ImageButton
+                android:id="@+id/blueberrymuffin"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/blueberrymuffincard"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <ImageButton
+                android:id="@+id/pumpkinloaf"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:background="@android:color/transparent"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/pumpkincard"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <ImageButton
+                android:id="@+id/icedlemonloaf"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/icedlemonloafcard"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <ImageButton
+                android:id="@+id/cheesedanish"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/cheesedanishcard"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <ImageButton
+                android:id="@+id/bagel"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/bagelcard"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <ImageButton
+                android:id="@+id/everythingbagel"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:background="@android:color/transparent"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/everythingbagelcard"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="291dp" />
+        </GridLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

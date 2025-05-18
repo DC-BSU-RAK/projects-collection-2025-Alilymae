@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ede0d4"
+    android:padding="24dp"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="9dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <TextView
+        android:id="@+id/usergreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/eb_garamond_medium"
+        android:text="Hello, user!"
+        android:textColor="#582f0e"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <TextView
+        android:id="@+id/deserttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/eb_garamond"
+        android:text="Hot Drinks"
+        android:textColor="#582f0e"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:text="MiCafe"
+        android:textAlignment="center"
+        android:textColor="#582f0e"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profilebtn"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/menubtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <ImageButton
+        android:id="@+id/profilebtn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001"
+        app:srcCompat="@drawable/profile" />
+
+    <ImageButton
+        android:id="@+id/menubtn"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="356dp"
+        android:layout_height="38dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/searchbar" />
+
+    <ImageView
+        android:id="@+id/grid"
+        android:layout_width="21dp"
+        android:layout_height="24dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393"
+        app:srcCompat="@drawable/grid" />
+
+    <ImageButton
+        android:id="@+id/hotdrinksbtn"
+        android:layout_width="76dp"
+        android:layout_height="93dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262"
+        app:srcCompat="@drawable/hotselect" />
+
+    <ImageButton
+        android:id="@+id/colddrinksbtn"
+        android:layout_width="76dp"
+        android:layout_height="93dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262"
+        app:srcCompat="@drawable/cold" />
+
+    <ImageButton
+        android:id="@+id/desertbtn"
+        android:layout_width="76dp"
+        android:layout_height="93dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262"
+        app:srcCompat="@drawable/desert" />
+
+    <ImageButton
+        android:id="@+id/pastriesbtn"
+        android:layout_width="76dp"
+        android:layout_height="93dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262"
+        app:srcCompat="@drawable/pastries" />
+
+    <ScrollView
+        android:layout_width="370dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deserttext"
+        app:layout_constraintVertical_bias="0.0">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <ImageButton
+                android:id="@+id/coldbrew"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/americanocard"
+                tools:layout_editor_absoluteX="-2dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <ImageButton
+                android:id="@+id/icedlatte"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/cortadocard"
+                tools:layout_editor_absoluteX="-2dp"
+                tools:layout_editor_absoluteY="496dp" />
+
+            <ImageButton
+                android:id="@+id/caramelmacchiato"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/carmaccard"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="497dp" />
+
+            <ImageButton
+                android:id="@+id/cappuccino"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/cappcard"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <ImageButton
+                android:id="@+id/esspressoconpanna"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/ecpcard"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <ImageButton
+                android:id="@+id/espresso"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:background="@android:color/transparent"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/espressocard"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <ImageButton
+                android:id="@+id/flatwhite"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/flatcard"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <ImageButton
+                android:id="@+id/latte"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/lattecard"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <ImageButton
+                android:id="@+id/espressomacchiato"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/maccard"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <ImageButton
+                android:id="@+id/mocha"
+                android:layout_width="175dp"
+                android:layout_height="197dp"
+                android:background="@android:color/transparent"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/mochacard"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="291dp" />
+        </GridLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
